@@ -12,6 +12,7 @@ import Projects from './src/pages/Projects';
 import Experience from './src/pages/Experience';
 import Contact from './src/pages/Contact';
 import NotFound from './src/pages/NotFound';
+import "./src/App.css";
 
 const App: React.FC = () => {
   return (

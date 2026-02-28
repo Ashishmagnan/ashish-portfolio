@@ -1,0 +1,30 @@
+.orb {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 9999px;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+.orb-blue {
+  background: #60a5fa; /* blue-400 */
+  top: -10%;
+  left: 10%;
+}
+
+.orb-purple {
+  background: #a78bfa; /* violet-400 */
+  bottom: -10%;
+  right: 10%;
+}
+
+.orb-pink {
+  background: #f472b6; /* pink-400 */
+  top: 30%;
+  right: -10%;
+}
+
+.tech-card {
+  will-change: transform, opacity;
+}

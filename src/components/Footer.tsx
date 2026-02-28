@@ -8,13 +8,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-center md:text-left">
             <p className="text-gray-600 text-sm">
-              © 2026 Alex Thompson. All rights reserved.
+              © 2026 Ashish Magnani. All rights reserved.
             </p>
           </div>
           
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Ashishmagnan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -23,7 +23,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ashish-magnani-887aab244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -32,7 +32,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:alex.thompson@email.com"
+              href="mailto:alex.ashishmagnani07@email.com"
               className="text-gray-600 hover:text-blue-600 transition-colors"
               aria-label="Email Contact"
             >
