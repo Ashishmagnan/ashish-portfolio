@@ -21,10 +21,7 @@ const TrustSection = () => {
 
         {/* LEFT STORY */}
         <div>
-          {/* <h2 className="text-sm tracking-widest text-gray-500 mb-3">
-            ACT 5
-          </h2> */}
-
+          
           <h3 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
             Why You Can <span className="text-indigo-600">Trust Me</span>
           </h3>
