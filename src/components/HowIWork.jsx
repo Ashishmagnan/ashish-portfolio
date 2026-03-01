@@ -32,53 +32,7 @@ const HowIWork = () => {
             easing: "easeOutQuad",
           });
 
-    // const onScroll = () => {
-    //   const windowHeight = window.innerHeight;
-
-    //   cards.forEach((card, i) => {
-    //     const icon = icons[i];
-    //     const rect = card.getBoundingClientRect();
-
-    //     // Trigger point: when card enters bottom half of viewport
-    //     const enterPoint = windowHeight - 1;
-
-    //     if (rect.top < enterPoint ) {
-    //       // Animate in
-    //       anime({
-    //         targets: card,
-    //         translateY: 0,
-    //         opacity: 1,
-    //         scale: 1,
-    //         duration: 300,
-    //         easing: "easeOutQuad",
-    //       });
-    //       anime({
-    //         targets: icon,
-    //         scale: 1,
-    //         rotate: 0,
-    //         duration: 300,
-    //         easing: "easeOutQuad",
-    //       });
-    //     } else {
-    //       // Reset when out of view (optional)
-    //       anime.set(card, {
-    //         translateY: 60,
-    //         opacity: 0,
-    //         scale: 0.95,
-    //       });
-    //       anime.set(icon, {
-    //         scale: 0,
-    //         rotate: -10,
-    //       });
-    //     }
-    //   });
-    // };
-
-    // window.addEventListener("scroll", onScroll, { passive: true });
-    // onScroll(); // trigger on mount
-
-    // return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+     }, []);
 
   return (
     <section
