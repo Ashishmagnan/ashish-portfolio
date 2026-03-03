@@ -44,9 +44,7 @@ const ProofOfWork = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* ACT TITLE */}
 <div className="text-center mb-20">
-  {/* <p className="uppercase tracking-widest text-sm text-gray-400 mb-3">
-    Act IV
-  </p> */}
+  
   <h2 className="text-4xl md:text-5xl font-bold text-gray-100">
     Proof of <span className="text-indigo-400">Work</span>
   </h2>
