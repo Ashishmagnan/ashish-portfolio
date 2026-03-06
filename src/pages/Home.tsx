@@ -98,14 +98,15 @@
 
 
 
+
+
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import anime from 'animejs/lib/anime.es.js';
 import Layout from '../components/Layout';
 import TechStack from '../components/TechStack';
-// import profileImg from '../assets/ashish.png';
-// import "../App.css"
+
 import HowIWork from '../components/HowIWork';
 import ProofOfWork from '../components/ProofOfWork';
 import TrustSection from '../components/TrustSection';
