@@ -16,27 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     anime.timeline({ easing: 'easeOutExpo', duration: 500 })
-      // .add({
-      //   targets: '.hero-name',
-      //   opacity: [0, 1],
-      //   translateY: [40, 0],
-      // })
-      // .add({
-      //   targets: '.hero-title',
-      //   opacity: [0, 1],
-      //   translateY: [30, 0],
-      // }, '-=600')
-      // .add({
-      //   targets: '.hero-desc',
-      //   opacity: [0, 1],
-      //   translateY: [20, 0],
-      // }, '-=500')
-      // .add({
-      //   targets: '.hero-btn',
-      //   opacity: [0, 1],
-      //   translateY: [20, 0],
-      //   delay: anime.stagger(120),
-      // }, '-=400')
+      
       .add({
         targets: '.hero-img',
         opacity: [0, 1],
