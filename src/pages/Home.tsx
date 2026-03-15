@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     anime.timeline({ easing: 'easeOutExpo', duration: 500 })
-      
+
       .add({
         targets: '.hero-img',
         opacity: [0, 1],

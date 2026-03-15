@@ -67,72 +67,72 @@ const TechStack = () => {
   ];
 
   useEffect(() => {
-  anime({
-    targets: '.tech-card',
-    opacity: [0, 1],
-    translateY: [30, 0],
-    scale: [0.96, 1],
-    easing: 'easeOutExpo',
-    duration: 700,
-    delay: anime.stagger(120, { grid: [3, 3], from: 'first' }),
-  });
-
-  
-
- 
+    anime({
+      targets: '.tech-card',
+      opacity: [0, 1],
+      translateY: [30, 0],
+      scale: [0.96, 1],
+      easing: 'easeOutExpo',
+      duration: 700,
+      delay: anime.stagger(120, { grid: [3, 3], from: 'first' }),
+    });
 
 
-   anime.timeline({
-    easing: 'easeOutExpo',
-  })
 
-  .add({
-    targets: '.tech-card',
-    opacity: [0, 1],
-    translateY: [30, 0],
-    rotateX: [-15, 0],
-    scale: [0.9, 1],
-    delay: anime.stagger(120),
-    duration: 900,
-  })
 
-  .add({
-    targets: '.tech-icon',
-    scale: [0.6, 1],
-    opacity: [0, 1],
-    delay: anime.stagger(120),
-    duration: 600,
-  }, '-=700')
 
-  .add({
-    targets: '.tech-label',
-    opacity: [0, 1],
-    translateY: [8, 0],
-    delay: anime.stagger(120),
-    duration: 500,
-  }, '-=600');
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        anime({
-          targets: '.tech-card',
-          opacity: [0, 1],
-          translateY: [30, 0],
-          scale: [0.66, 1],
-          easing: 'easeOutExpo',
-          duration: 900,
-          delay: anime.stagger(120, { grid: [3, 3], from: 'first' }),
-        });
-        observer.disconnect();
-      }
-    },
-    { threshold: 0.2 }
-  );
 
-  const section = document.querySelector('#tech-stack');
-  if (section) observer.observe(section);
- return () => observer.disconnect();
-}, []);
+    anime.timeline({
+      easing: 'easeOutExpo',
+    })
+
+      .add({
+        targets: '.tech-card',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        rotateX: [-15, 0],
+        scale: [0.9, 1],
+        delay: anime.stagger(120),
+        duration: 900,
+      })
+
+      .add({
+        targets: '.tech-icon',
+        scale: [0.6, 1],
+        opacity: [0, 1],
+        delay: anime.stagger(120),
+        duration: 600,
+      }, '-=700')
+
+      .add({
+        targets: '.tech-label',
+        opacity: [0, 1],
+        translateY: [8, 0],
+        delay: anime.stagger(120),
+        duration: 500,
+      }, '-=600');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: '.tech-card',
+            opacity: [0, 1],
+            translateY: [30, 0],
+            scale: [0.66, 1],
+            easing: 'easeOutExpo',
+            duration: 900,
+            delay: anime.stagger(120, { grid: [3, 3], from: 'first' }),
+          });
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const section = document.querySelector('#tech-stack');
+    if (section) observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
 
   return (
